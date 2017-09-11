@@ -1,4 +1,4 @@
-const jiraRegex = /atlassian/g
+const jiraRegex = /\.atlassian\.net\/browse/g
 
 const aTags = document.body.querySelectorAll("a[href^='http']")
 const aTagsArray = Array.from(aTags)
