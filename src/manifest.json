@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "JIRA Preview",
+	"version": "0.1",
+	"description": "Allowsusers to preview the Body of a JIRA ticket when hovering over a JIRA link.",
+
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["jquery-3.2.1.min.js", "content.js"]
+		}
+	]
+
+}
