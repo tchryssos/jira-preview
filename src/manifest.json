@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "JIRA Preview",
 	"version": "0.1",
-	"description": "Allowsusers to preview the Body of a JIRA ticket when hovering over a JIRA link.",
+	"description": "Allows users to preview the Body of a JIRA ticket when hovering over a JIRA link.",
 
 	"content_scripts": [
 		{
@@ -11,6 +11,11 @@
 			],
 			"js": ["content.js"]
 		}
+	],
+
+	"permissions": [
+		"https://*.atlassian.net/browse/*",
+		"http://*.atlassian.net/browse/*"
 	]
 
 }
